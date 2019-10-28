@@ -1,6 +1,4 @@
 
-import java.util.Arrays;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -49,7 +47,23 @@ public class mathFrame extends javax.swing.JFrame {
         valueTF = new javax.swing.JTextField();
         powBtn = new javax.swing.JButton();
         powLbl = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
         sideTF1 = new javax.swing.JTextField();
+        downTF = new javax.swing.JTextField();
+        roundDownBtn = new javax.swing.JButton();
+        downLbl = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        upTF = new javax.swing.JTextField();
+        upBtn = new javax.swing.JButton();
+        upLbl = new javax.swing.JLabel();
+        sqrtTF = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
+        sqrtBtn = new javax.swing.JButton();
+        sqrtLbl = new javax.swing.JLabel();
+        radBtn = new javax.swing.JButton();
+        radTF = new javax.swing.JTextField();
+        jLabel9 = new javax.swing.JLabel();
+        radLbl = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -134,8 +148,8 @@ public class mathFrame extends javax.swing.JFrame {
         hypLbl.setText("------------------");
         jPanel1.add(hypLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 310, 190, 20));
 
-        jLabel4.setText("Enter two numbers and click the button. The program will display the hypotenuse of a right angle triangle");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, -1, -1));
+        jLabel4.setText("Enter a decimal and click the button. The program will round down to the nearest integer");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, -1, -1));
 
         sideTF2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -165,6 +179,9 @@ public class mathFrame extends javax.swing.JFrame {
         powLbl.setText("------------------");
         jPanel1.add(powLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 250, 190, 20));
 
+        jLabel6.setText("Enter two numbers and click the button. The program will display the hypotenuse of a right angle triangle");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, -1, -1));
+
         sideTF1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sideTF1ActionPerformed(evt);
@@ -172,7 +189,88 @@ public class mathFrame extends javax.swing.JFrame {
         });
         jPanel1.add(sideTF1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, 60, -1));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 650, 450));
+        downTF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                downTFActionPerformed(evt);
+            }
+        });
+        jPanel1.add(downTF, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 380, 60, -1));
+
+        roundDownBtn.setText("Round Down");
+        roundDownBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                roundDownBtnActionPerformed(evt);
+            }
+        });
+        jPanel1.add(roundDownBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 380, -1, -1));
+
+        downLbl.setText("------------------");
+        jPanel1.add(downLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 380, 190, 20));
+
+        jLabel7.setText("Enter a decimal and click the button. The program will round down to the nearest integer");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, -1, -1));
+
+        upTF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                upTFActionPerformed(evt);
+            }
+        });
+        jPanel1.add(upTF, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 440, 60, -1));
+
+        upBtn.setText("Round Up");
+        upBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                upBtnActionPerformed(evt);
+            }
+        });
+        jPanel1.add(upBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 440, -1, -1));
+
+        upLbl.setText("------------------");
+        jPanel1.add(upLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 440, 190, 20));
+
+        sqrtTF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sqrtTFActionPerformed(evt);
+            }
+        });
+        jPanel1.add(sqrtTF, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 510, 60, -1));
+
+        jLabel8.setText("Enter an integer. The program will display the square root of the integer.");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 480, -1, -1));
+
+        sqrtBtn.setText("Square Root");
+        sqrtBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sqrtBtnActionPerformed(evt);
+            }
+        });
+        jPanel1.add(sqrtBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 510, -1, -1));
+
+        sqrtLbl.setText("------------------");
+        jPanel1.add(sqrtLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 510, 190, 20));
+
+        radBtn.setText("To Radians");
+        radBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radBtnActionPerformed(evt);
+            }
+        });
+        jPanel1.add(radBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 570, -1, -1));
+
+        radTF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radTFActionPerformed(evt);
+            }
+        });
+        jPanel1.add(radTF, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 570, 60, -1));
+
+        jLabel9.setText("Enter an angle in degrees. The program will display it in radians.");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 540, -1, -1));
+
+        radLbl.setText("------------------");
+        jPanel1.add(radLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 570, 190, 20));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 630));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -241,6 +339,50 @@ public class mathFrame extends javax.swing.JFrame {
         String total = String.valueOf(solve);
         powLbl.setText(total);
     }//GEN-LAST:event_powBtnActionPerformed
+
+    private void downTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_downTFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_downTFActionPerformed
+
+    private void roundDownBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roundDownBtnActionPerformed
+        double value = Double.parseDouble(downTF.getText());
+        double solve = Math.floor(value);
+        String total = String.valueOf(solve);
+        downLbl.setText(total); // TODO add your handling code here:
+    }//GEN-LAST:event_roundDownBtnActionPerformed
+
+    private void upTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_upTFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_upTFActionPerformed
+
+    private void upBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_upBtnActionPerformed
+        double value = Double.parseDouble(upTF.getText());
+        double solve = Math.ceil(value);
+        String total = String.valueOf(solve);
+        upLbl.setText(total); // TODO add your handling code here:
+    }//GEN-LAST:event_upBtnActionPerformed
+
+    private void sqrtTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sqrtTFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_sqrtTFActionPerformed
+
+    private void sqrtBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sqrtBtnActionPerformed
+        double value = Double.parseDouble(sqrtTF.getText());
+        double solve = Math.sqrt(value);
+        String total = String.valueOf(solve);
+        sqrtLbl.setText(total);
+    }//GEN-LAST:event_sqrtBtnActionPerformed
+
+    private void radBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radBtnActionPerformed
+        double value = Double.parseDouble(radTF.getText());
+        double solve = Math.toRadians(value);
+        String total = String.valueOf(solve);
+        radLbl.setText(total);// TODO add your handling code here:
+    }//GEN-LAST:event_radBtnActionPerformed
+
+    private void radTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radTFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_radTFActionPerformed
     /**
      * @param args the command line arguments
      */
@@ -282,6 +424,8 @@ public class mathFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton HypBtn;
+    private javax.swing.JLabel downLbl;
+    private javax.swing.JTextField downTF;
     private javax.swing.JTextField expoTF;
     private javax.swing.JLabel hypLbl;
     private javax.swing.JLabel jLabel1;
@@ -289,6 +433,10 @@ public class mathFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton maxBtn;
     private javax.swing.JLabel maxLbl;
@@ -300,8 +448,18 @@ public class mathFrame extends javax.swing.JFrame {
     private javax.swing.JTextField minTF2;
     private javax.swing.JButton powBtn;
     private javax.swing.JLabel powLbl;
+    private javax.swing.JButton radBtn;
+    private javax.swing.JLabel radLbl;
+    private javax.swing.JTextField radTF;
+    private javax.swing.JButton roundDownBtn;
     private javax.swing.JTextField sideTF1;
     private javax.swing.JTextField sideTF2;
+    private javax.swing.JButton sqrtBtn;
+    private javax.swing.JLabel sqrtLbl;
+    private javax.swing.JTextField sqrtTF;
+    private javax.swing.JButton upBtn;
+    private javax.swing.JLabel upLbl;
+    private javax.swing.JTextField upTF;
     private javax.swing.JTextField valueTF;
     // End of variables declaration//GEN-END:variables
 }
