@@ -1,8 +1,8 @@
 
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Dylan Moore  
+ * Oct 28 2019  
+ * simple program utilising math methods
  */
 /**
  *
@@ -284,11 +284,11 @@ public class mathFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_maxTF1ActionPerformed
 
     private void maxBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_maxBtnActionPerformed
-        double max1 = Double.parseDouble(maxTF1.getText());
+        double max1 = Double.parseDouble(maxTF1.getText()); //get both inputs
         double max2 = Double.parseDouble(maxTF2.getText());
-        double solve = Math.max(max1, max2);
-        String maxInt = String.valueOf(solve);
-        maxLbl.setText(maxInt);
+        double solve = Math.max(max1, max2); //determin largest number
+        String maxInt = String.valueOf(solve); //change double to string
+        maxLbl.setText(maxInt); //display largest number
     }//GEN-LAST:event_maxBtnActionPerformed
 
     private void minTF1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_minTF1ActionPerformed
@@ -302,7 +302,7 @@ public class mathFrame extends javax.swing.JFrame {
     private void minBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_minBtnActionPerformed
         double min1 = Double.parseDouble(minTF1.getText());
         double min2 = Double.parseDouble(minTF2.getText());
-        double solve = Math.min(min1, min2);
+        double solve = Math.min(min1, min2); // finds minimum value
         String minInt = String.valueOf(solve);
         minLbl.setText(minInt);
     }//GEN-LAST:event_minBtnActionPerformed
@@ -314,8 +314,8 @@ public class mathFrame extends javax.swing.JFrame {
     private void HypBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HypBtnActionPerformed
         double side1 = Double.parseDouble(sideTF1.getText());
         double side2 = Double.parseDouble(sideTF2.getText());
-        double solve = Math.hypot(side1, side2);
-        double roundOff = Math.round(solve * 100.0) / 100.0;
+        double solve = Math.hypot(side1, side2); //determin hypotenuse
+        double roundOff = Math.round(solve * 100.0) / 100.0; //round to 1 decimal
         String hyp = String.valueOf(roundOff);
         hypLbl.setText(hyp);
     }//GEN-LAST:event_HypBtnActionPerformed
@@ -335,7 +335,7 @@ public class mathFrame extends javax.swing.JFrame {
     private void powBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_powBtnActionPerformed
         double value = Double.parseDouble(valueTF.getText());
         double expo = Double.parseDouble(expoTF.getText());
-        double solve = Math.pow(value, expo);
+        double solve = Math.pow(value, expo); //solves value to the exponent
         String total = String.valueOf(solve);
         powLbl.setText(total);
     }//GEN-LAST:event_powBtnActionPerformed
@@ -346,9 +346,9 @@ public class mathFrame extends javax.swing.JFrame {
 
     private void roundDownBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roundDownBtnActionPerformed
         double value = Double.parseDouble(downTF.getText());
-        double solve = Math.floor(value);
+        double solve = Math.floor(value); //rounds decimal down to closest integer
         String total = String.valueOf(solve);
-        downLbl.setText(total); // TODO add your handling code here:
+        downLbl.setText(total); 
     }//GEN-LAST:event_roundDownBtnActionPerformed
 
     private void upTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_upTFActionPerformed
@@ -357,9 +357,9 @@ public class mathFrame extends javax.swing.JFrame {
 
     private void upBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_upBtnActionPerformed
         double value = Double.parseDouble(upTF.getText());
-        double solve = Math.ceil(value);
+        double solve = Math.ceil(value); //round decimal to highest integer
         String total = String.valueOf(solve);
-        upLbl.setText(total); // TODO add your handling code here:
+        upLbl.setText(total); 
     }//GEN-LAST:event_upBtnActionPerformed
 
     private void sqrtTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sqrtTFActionPerformed
@@ -368,14 +368,14 @@ public class mathFrame extends javax.swing.JFrame {
 
     private void sqrtBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sqrtBtnActionPerformed
         double value = Double.parseDouble(sqrtTF.getText());
-        double solve = Math.sqrt(value);
+        double solve = Math.sqrt(value); //squar roots given value
         String total = String.valueOf(solve);
         sqrtLbl.setText(total);
     }//GEN-LAST:event_sqrtBtnActionPerformed
 
     private void radBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radBtnActionPerformed
         double value = Double.parseDouble(radTF.getText());
-        double solve = Math.toRadians(value);
+        double solve = Math.toRadians(value); //changes angle to radians
         String total = String.valueOf(solve);
         radLbl.setText(total);// TODO add your handling code here:
     }//GEN-LAST:event_radBtnActionPerformed
